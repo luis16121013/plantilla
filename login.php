@@ -36,7 +36,7 @@
 
         <div class="contenedor seccion contenido-centrado-login">
             <!--<h2 class="fw-300 centrar-texto ">Llena el formulario De Contácto</h2>-->
-            <form class="form-login" action="" class="contacto">
+            <form class="form-login" class="contacto" action="controllers/controllerPeople.php" method="post" enctype="multipart/form-data" >
 
                 <fieldset>
                     <legend class="fw-300-l centrar-texto-l ">LOGIN</legend>
