@@ -1,6 +1,4 @@
-
 <?php
-echo "hola mundo";
 /**
  * pagina plantilla
  *  <a href="controllers/controllerPeople.php">ir a login</a>
@@ -37,17 +35,17 @@ echo "hola mundo";
   <header class="site-header inicio">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="index.html">
+                <a href="index.php">
                 <img src="assets/img/principal/inmue.svg" alt="logotipo de Mobiliaria Ccopa">
                 </a>
                 <nav class="navegacion">
                     <a href="nosotros.php">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="subir_inmueble.html">Subir Inmueble</a>
-                    <a href="login.html">Ingresar</a>
-                    <a href="managerClientjsp.jsp">Registrarse</a>
+                    <a href="anuncios.php">Anuncios</a>
+                    <a href="blog.php">Blog</a>
+                    <a href="contacto.php">Contacto</a>
+                    <a href="subir_inmueble.php">Subir Inmueble</a>
+                    <a href="login.php">Ingresar</a>
+                    <a href="managerClient.php">Registrarse</a>
                      <a href="../Listar.java">Listar</a>
                
 
@@ -109,7 +107,7 @@ echo "hola mundo";
                             <p>4</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div>
             </div>
             <div class="anuncio">
@@ -133,7 +131,7 @@ echo "hola mundo";
                             <p>4</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div>
             </div>
             <div class="anuncio">
@@ -157,19 +155,19 @@ echo "hola mundo";
                             <p>4</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div>
             </div>
         </div>
         <div class="ver-todas">
-            <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+            <a href="anuncios.php" class="boton boton-verde">Ver Todas</a>
         </div>
     </main>
     <section class="imagen-contacto">
         <div class="contenedor contenido-contacto">
             <h2>Encuentra la casa de tus sueños</h2>
             <p>llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-            <a href="contacto.html"class="boton boton-amarillo">Contactanos</a>
+            <a href="contacto.php"class="boton boton-amarillo">Contactanos</a>
         </div>
     </section>
     <div class="seccion-inferior contenedor">
@@ -180,7 +178,7 @@ echo "hola mundo";
                     <img src="assets/img/principal/blog1.jpg" alt="Entrada de Blog">
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                     </a>
                     <p>Escrito el: <span> 20/20/2020 </span> por: <span> Admin </span> </p>
@@ -193,7 +191,7 @@ echo "hola mundo";
                     <img src="assets/img/principal/blog2.jpg" alt="Entrada de Blog">
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Guía para la decoración de tu hogar</h4>
                     </a>
                     <p>Escrito el: <span>20/20/2020 </span> por: <span> Admin </span></p>
@@ -216,11 +214,11 @@ echo "hola mundo";
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="login.html">Ingresar</a>
+                <a href="nosotros.php">Nosotros</a>
+                <a href="anuncios.php">Anuncios</a>
+                <a href="blog.php">Blog</a>
+                <a href="contacto.php">Contacto</a>
+                <a href="login.php">Ingresar</a>
 
             </nav>
             <p class="copyright">"Todos los Derechos Reservados de dccopay&commat;gmail.com 2020"</p>

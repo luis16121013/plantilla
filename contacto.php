@@ -7,28 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PupilosdeVidcy</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="assets/css/principal/normalize.css">
+    <link rel="stylesheet" href="assets/css/principal/main.css">
 </head>
 <body>
     <header class="site-header ">
         <div class="contenedor contenido-header">
             <div class="barrasub">
-                <a href="index.html">
-                <img src="../img/logo_secundario.svg" alt="logotipo de Mobiliaria Ccopa">
+                <a href="index.php">
+                <img src="assets/img/principal/logo_secundario.svg" alt="logotipo de Mobiliaria Ccopa">
                 </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="nosotros.php">Nosotros</a>
+                    <a href="anuncios.php">Anuncios</a>
+                    <a href="blog.php">Blog</a>
+                    <a href="contacto.php">Contacto</a>
                 </nav>
             </div> <!--contenedor-->
         </div>
 
     </header>
         <h1 class="fw-300 centrar-texto"></h1>
-        <img src="../img/destacada3.jpg" alt="Imgen Principal">
+        <img src="assets/img/principal/destacada3.jpg" alt="Imgen Principal">
         <main class="contenedor seccion contenido-centrado">
             <h2 class="fw-300 centrar-texto ">Llena el formulario De Contácto</h2>
             <form action="" class="contacto">
@@ -91,10 +91,10 @@
         <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="nosotros.php">Nosotros</a>
+                <a href="anuncios.php">Anuncios</a>
+                <a href="blog.php">Blog</a>
+                <a href="contacto.php">Contacto</a>
 
             </nav>
             <p class="copyright">"Todos los Derechos Reservados de dccopay&commat;gmail.com 2020"</p>

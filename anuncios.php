@@ -7,21 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PupilosdeVidcy</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="assets/css/principal/normalize.css">
+    <link rel="stylesheet" href="assets/css/principal/main.css">
 </head>
 <body>
     <header class="site-header ">
         <div class="contenedor contenido-header">
             <div class="barrasub">
-                <a href="index.html">
-                <img src="../img/logo_secundario.svg" alt="logotipo de Mobiliaria Ccopa">
+                <a href="index.php">
+                <img src="assets/img/principal/logo_secundario.svg" alt="logotipo de Mobiliaria Ccopa">
                 </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="nosotros.php">Nosotros</a>
+                    <a href="anuncios.php">Anuncios</a>
+                    <a href="blog.php">Blog</a>
+                    <a href="contacto.php">Contacto</a>
 
                 </nav>
             </div> <!--contenedor-->
@@ -35,7 +35,7 @@
 
             <div class="contenedor-anuncios">
                 <div class="anuncio">
-                    <img src="../img/anuncio4.jpg" alt="Anuncio Casa Lujo en el Lago">
+                    <img src="assets/img/principal/anuncio4.jpg" alt="Anuncio Casa Lujo en el Lago">
                     <div class="contenido-anuncio">
                         <h3>Casas de Lujo en el Lago</h3>
                         <p>Casa en el Lago con Exelente Vista, acabados de lujo a un excelente precio</p>
@@ -44,23 +44,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div>
                 </div>
                 <div class="anuncio">
-                    <img src="../img/anuncio5.jpg" alt="Anuncio Casas de Lujo">
+                    <img src="assets/img/principal/anuncio5.jpg" alt="Anuncio Casas de Lujo">
                     <div class="contenido-anuncio">
                         <h3>Casas terminadas de lujo</h3>
                         <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
@@ -68,23 +68,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div>
                 </div>
                 <div class="anuncio">
-                    <img src="../img/anuncio6.jpg" alt="Anuncio Casa con ALberca">
+                    <img src="assets/img/principal/anuncio6.jpg" alt="Anuncio Casa con ALberca">
                     <div  class ="contenido-anuncio">
                         <h3>Casa con alberca</h3>
                         <p>Casa con alberca  y acabados de lujo  en la ciudad, excelente oportunidad</p>
@@ -92,23 +92,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div><!--contenido anuncios -->
                 </div><!--anuncios-->
                 <div class="anuncio">
-                    <img src="../img/anuncio1.jpg" alt="Anuncio Casa Lujo en el Lago">
+                    <img src="assets/img/principal/anuncio1.jpg" alt="Anuncio Casa Lujo en el Lago">
                     <div class="contenido-anuncio">
                         <h3>Casas de Lujo en el Lago</h3>
                         <p>Casa en el Lago con Exelente Vista, acabados de lujo a un excelente precio</p>
@@ -117,23 +117,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div>
                 </div>
                 <div class="anuncio">
-                    <img src="../img/anuncio2.jpg" alt="Anuncio Casas Terminadas de Lujo">
+                    <img src="assets/img/principal/anuncio2.jpg" alt="Anuncio Casas Terminadas de Lujo">
                     <div class="contenido-anuncio">
                         <h3>Casas terminadas de lujo</h3>
                         <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
@@ -141,23 +141,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div>
                 </div>
                 <div class="anuncio">
-                    <img src="../img/anuncio3.jpg" alt="Anuncio Casa con ALberca">
+                    <img src="assets/img/principal/anuncio3.jpg" alt="Anuncio Casa con ALberca">
                     <div  class ="contenido-anuncio">
                         <h3>Casa con alberca</h3>
                         <p>Casa con alberca  y acabados de lujo  en la ciudad, excelente oportunidad</p>
@@ -165,23 +165,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div><!--contenido anuncios -->
                 </div><!--anuncios-->
                 <div class="anuncio">
-                    <img src="../img/anuncio1.jpg" alt="Anuncio Casa Lujo en el Lago">
+                    <img src="assets/img/principal/anuncio1.jpg" alt="Anuncio Casa Lujo en el Lago">
                     <div class="contenido-anuncio">
                         <h3>Casas de Lujo en el Lago</h3>
                         <p>Casa en el Lago con Exelente Vista, acabados de lujo a un excelente precio</p>
@@ -190,23 +190,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div>
                 </div>
                 <div class="anuncio">
-                    <img src="../img/anuncio2.jpg" alt="Anuncio Casas Terminadas de Lujo">
+                    <img src="assets/img/principal/anuncio2.jpg" alt="Anuncio Casas Terminadas de Lujo">
                     <div class="contenido-anuncio">
                         <h3>Casas terminadas de lujo</h3>
                         <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
@@ -214,23 +214,23 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div>
                 </div>
                 <div class="anuncio">
-                    <img src="../img/anuncio3.jpg" alt="Anuncio Casa con ALberca">
+                    <img src="assets/img/principal/anuncio3.jpg" alt="Anuncio Casa con ALberca">
                     <div  class ="contenido-anuncio">
                         <h3>Casa con alberca</h3>
                         <p>Casa con alberca  y acabados de lujo  en la ciudad, excelente oportunidad</p>
@@ -238,24 +238,24 @@
 
                         <ul class="iconos-caracteristicas">
                             <li>
-                                <img src="../img/icono_wc.svg" alt="">
+                                <img src="assets/img/principal/icono_wc.svg" alt="">
                                 <p>3</p>
                             </li>
                             <li>
-                                <img src="../img/icono_estacionamiento.svg" alt="">
+                                <img src="assets/img/principal/icono_estacionamiento.svg" alt="">
                                 <p>4</p>
                             </li>
                             <li>
-                                <img src="../img/icono_dormitorio.svg" alt="">
+                                <img src="assets/img/principal/icono_dormitorio.svg" alt="">
                                 <p>4</p>
                             </li>
                         </ul>
-                        <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                        <a href="anuncio.php" class="boton boton-amarillo d-block">Ver Propiedad</a>
                     </div><!--contenido anuncios -->
                 </div><!--anuncios-->
             </div>
             <!--<div class="ver-todas">
-                <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+                <a href="anuncios.php" class="boton boton-verde">Ver Todas</a>
             </div> -->
         </main>
 
@@ -263,10 +263,10 @@
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="nosotros.php">Nosotros</a>
+                <a href="anuncios.php">Anuncios</a>
+                <a href="blog.php">Blog</a>
+                <a href="contacto.php">Contacto</a>
 
             </nav>
             <p class="copyright">"Todos los Derechos Reservados de dccopay&commat;gmail.com 2020"</p>

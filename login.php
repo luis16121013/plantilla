@@ -7,21 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PupilosdeVidcy</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="assets/css/principal/normalize.css">
+    <link rel="stylesheet" href="assets/css/principal/main.css">
 </head>
 <body>
     <header class="site-header ">
         <div class="contenedor contenido-header">
             <div class="barrasub">
-                <a href="index.html">
-                     <img src="../img/logo_secundario.svg" alt="logotipo de Mobiliaria Ccopa">
+                <a href="index.php">
+                     <img src="assets/img/principal/logo_secundario.svg" alt="logotipo de Mobiliaria Ccopa">
                 </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="nosotros.php">Nosotros</a>
+                    <a href="anuncios.php">Anuncios</a>
+                    <a href="blog.php">Blog</a>
+                    <a href="contacto.php">Contacto</a>
 
 
 
@@ -44,7 +44,7 @@
                     <input type="text" name="username" id="nombre" placeholder="tu nombre de usuario" required >
                     <label for="password">PassWord:</label>
                     <input type="password" name="password" id="password" placeholder="Tu contraseña" required>
-                    <a href="registrar_usuario.html">Crear una Cuenta</a>
+                    <a href="registrar_usuario.php">Crear una Cuenta</a>
                 </fieldset>
 
 
@@ -62,11 +62,11 @@
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="login.html">Ingresar</a>
+                <a href="nosotros.php">Nosotros</a>
+                <a href="anuncios.php">Anuncios</a>
+                <a href="blog.php">Blog</a>
+                <a href="contacto.php">Contacto</a>
+                <a href="login.php">Ingresar</a>
 
             </nav>
             <p class="copyright">"Todos los Derechos Reservados de dccopay&commat;gmail.com 2020" </p>
