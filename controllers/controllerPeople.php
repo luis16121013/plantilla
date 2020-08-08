@@ -8,16 +8,19 @@ if(isset($_SERVER['REQUEST_METHOD'])){
         require_once("../models/people.php");
 
         $obj= new people();
-        $obj=$obj->validar("Administrador","4321");
+        $obj=$obj->validar("DILAN","1234");
         
         if(!$obj){
-            header("location:http://localhost/v1/");
-        }else if($obj->cargo=='Administrador'){
+            header("location:http://localhost/PLANTILLA/");
+        }else if($obj->is_user=='3'){
 
             /**
              * usamos el objeto que nos retorna
              */
-            header("location:http://localhost/v1/administrador.php");
+            header("location:http://localhost/plantilla/administrador.php");
+      
+        }else{
+            echo 'NO FOUND';
         }
     }else {
         echo'hola';

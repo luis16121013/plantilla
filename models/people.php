@@ -7,7 +7,7 @@ class people{
         $this->con=database::create()->conect(new mysql);
     }
     public function validar($user,$pass){
-        $sql="SELECT*FROM table_users WHERE cargo=? AND pass=?";
+        $sql="SELECT *FROM people WHERE user_name=? AND pass=?";
         $rs=$this->con->prepare($sql);
         $rs->execute(array($user,$pass));
         return $rs->fetch(PDO::FETCH_OBJ);

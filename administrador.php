@@ -6,9 +6,10 @@ $rs=new controllerAdministrador();
 <table>
     <thead>
         <tr>
-        <td>id</td>
-        <td>cargo</td>
-        <td>pass</td>
+        <td>dni</td>
+        <td>active</td>
+        <td>user</td>
+
         </tr>
     </thead>
     <tbody>
@@ -17,9 +18,9 @@ $rs=new controllerAdministrador();
         foreach($rs as $obj):
         ?>
            <tr>
-                <td><?php echo $obj->idUser; ?></td>
-                <td><?php echo $obj->cargo; ?></td>
-                <td><?php echo $obj->pass; ?></td>
+                <td><?php echo $obj->dni; ?></td>
+                <td><?php echo $obj->is_active; ?></td>
+                <td><?php echo $obj->is_user; ?></td>
            </tr>
         <?php
         endforeach;

@@ -11,7 +11,7 @@ class administrador{
      * All si son varios rows
      */
     public function listUsers(){
-        $sql="SELECT*FROM table_users";
+        $sql="SELECT*FROM people";
         $rs=$this->con->prepare($sql);
         $rs->execute();
         return $rs->fetchAll(PDO::FETCH_OBJ);
