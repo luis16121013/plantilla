@@ -3,5 +3,6 @@
 echo "hola mundo";
 /**
  * pagina plantilla
+ * hola mundo
  */
 ?>
