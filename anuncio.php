@@ -11,23 +11,10 @@
     <link rel="stylesheet" href="assets/css/principal/main.css">
 </head>
 <body>
-    <header class="site-header ">
-        <div class="contenedor contenido-header">
-            <div class="barrasub">
-                <a href="index.php">
-                <img src="assets/img/principal/logo_secundario.svg" alt="logotipo de Mobiliaria Ccopa">
-                </a>
-                <nav class="navegacion">
-                    <a href="nosotros.php">Nosotros</a>
-                    <a href="anuncios.php">Anuncios</a>
-                    <a href="blog.php">Blog</a>
-                    <a href="contacto.php">Contacto</a>
-
-                </nav>
-            </div> <!--contenedor-->
-        </div>
-
-    </header>
+    
+<?php
+require_once('pages/nav.php');
+?>
         <h1 class="fw-300 centrar-texto">Casa en venta Junto al Bosque</h1>
         <img src="assets/img/principal/destacada.jpg" alt="imagen anuncio">
         <main class="contenedor seccion contenido-centrado">

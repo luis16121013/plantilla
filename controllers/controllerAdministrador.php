@@ -1,11 +1,11 @@
 <?php
 require_once('models/administrador.php');
-class controllerAdministrador{
-    private $obj=null;
-    public function __construct(){
-        $this->obj=new administrador();
+if(isset($_SERVER['REQUEST_METHOD'])){
+    if($_SERVER['REQUEST_METHOD']==='POST'){
+
+    }else if($_SERVER['REQUEST_METHOD']==='GET'){
+
     }
-    public function listarUsuarios(){
-        return $this->obj->listUsers();
-    }
+}else{
+    echo 'ACCESO RESTRINGIDO';
 }

@@ -1,62 +1,11 @@
-<?php
-/**
- * pagina plantilla
- *  <a href="controllers/controllerPeople.php">ir a login</a>
- */
-?>
-<!doctype html>
-<html class="no-js" lang="">
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="assets/css/principal/normalize.css">
-  <link rel="stylesheet" href="assets/css/principal/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
 
   <!-- Add your site or application content here -->
 
-  <header class="site-header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.php">
-                <img src="assets/img/principal/inmue.svg" alt="logotipo de Mobiliaria Ccopa">
-                </a>
-                <nav class="navegacion">
-                    <a href="nosotros.php">Nosotros</a>
-                    <a href="anuncios.php">Anuncios</a>
-                    <a href="blog.php">Blog</a>
-                    <a href="contacto.php">Contacto</a>
-                    <a href="subir_inmueble.php">Subir Inmueble</a>
-                    <a href="login.php">Ingresar</a>
-                    <a href="managerClient.php">Registrarse</a>
-                     <a href="../Listar.java">Listar</a>
-               
-
-                </nav>
-            </div> <!--contenedor-->
-
-            <h1>Ventas de Casas y Departamentos  Exclusivos de Lujo </h1>
-        </div>
-
-
-    </header>
+<?php
+require_once('pages/header.php');
+require_once('pages/nav.php');
+?>
 
     <section class="contenedor seccion">
         <h2 class="fw-300 centrar-texto">Mas Sobre Nosotros</h2>
@@ -211,19 +160,12 @@
             </div>
         </section>
     </div>
-    <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.php">Nosotros</a>
-                <a href="anuncios.php">Anuncios</a>
-                <a href="blog.php">Blog</a>
-                <a href="contacto.php">Contacto</a>
-                <a href="login.php">Ingresar</a>
+    
+<?php
+require_once('pages/navFooter.php');
+?>
 
-            </nav>
-            <p class="copyright">"Todos los Derechos Reservados de dccopay&commat;gmail.com 2020"</p>
-        </div>
-    </footer>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -234,7 +176,8 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
 
-</html>
 
+<?php
+require_once('pages/footer.php');
+?>
