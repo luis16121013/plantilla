@@ -124,7 +124,7 @@ $obj= new administrador();
         <input class="form-control " id="myInput" type="text" placeholder="Search..">
       </div>
       <div class="col-2">
-        <a class="btn btn-info" href="#">
+        <a class="btn btn-info" href="controllers/controllerAdministrador.php?action=registrarCliente">
           <img src="assets/icon/administrador/agregar.svg" class="p-0" style="width: 40px;" >
         </a>
       </div>

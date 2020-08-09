@@ -10,6 +10,7 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             if($_GET['tipo']=="cliente"){
                 /**
                  * logica de registro con ddbb
+                 * 
                  */
                 header("location:http://localhost/plantilla/admin-tabla-clientes.php");
             }
@@ -31,6 +32,11 @@ if(isset($_SERVER['REQUEST_METHOD'])){
              * redirigiendo 
              */
             header("location:http://localhost/plantilla/admin-tabla-clientes.php");
+        }
+        else if($_GET['action']=="registrarCliente"){
+
+
+            header("location:http://localhost/plantilla/add-table-cliente.php");
         }
     }
 }else{
