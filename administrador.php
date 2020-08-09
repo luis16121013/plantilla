@@ -105,7 +105,7 @@ if(!isset($_SESSION['name'])){
        * aqui DAR CODIGO PARA MOSTRAR NOMBRE DE USUARIO
        */
       //echo $_SESSION['name'];
-      echo NameSesion();
+      echo $_SESSION['name'];
       ?>
 
 

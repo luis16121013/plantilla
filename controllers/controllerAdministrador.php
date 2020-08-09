@@ -6,7 +6,9 @@ if(isset($_SERVER['REQUEST_METHOD'])){
 
     }else if($_SERVER['REQUEST_METHOD']==='GET'){
         if($_GET['action']=="salir"){
-            closeSesion();
+            session_start();
+            session_unset();
+            session_destroy();
             header("location:http://localhost/plantilla/index.php");
         }
     }

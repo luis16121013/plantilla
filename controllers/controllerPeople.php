@@ -17,6 +17,7 @@ if(isset($_SERVER['REQUEST_METHOD'])){
 
         $obj=$obj->validar($user,$pass);
         
+        session_start();
         if(!$obj){
             /**
              * si el user no existe redirigimos al index
@@ -27,8 +28,10 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             /**
              * usamos el objeto que nos retorna
              */
+            $firsName=$obj->firsName;
+            $lastName=$obj->lastName;
+            $rol=$obj->is_user;
             require_once("../bin/sesion.php");
-            openSesion($obj->firsName,$obj->lastName,$obj->is_user);
 
             header("location:http://localhost/plantilla/administrador.php");
       
