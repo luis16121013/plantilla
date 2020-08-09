@@ -1,5 +1,17 @@
 
-
+<?php
+/**
+ *  IMPORTANDO EL PAQUETE DE LA SESION:::::::: 
+ */
+session_start();
+if(!isset($_SESSION['name'])){
+    header("location:http://localhost/plantilla/");
+}else if($_SESSION['rol']!='3'){
+    header("location:http://localhost/plantilla/login.php");
+}
+require_once("modelo/administrador.php");
+$obj= new administrador();
+?>
 
 
 <!DOCTYPE html>
@@ -121,7 +133,7 @@
       <table class="table table-hover table-bordered mt-3">
         <thead class="bg-dark text-white">
           <tr>
-          <th>Dni</th>
+            <th>Dni</th>
             <th>Nombres</th>
             <th>Apellidos</th>
             <th>Dirección</th>
@@ -132,6 +144,23 @@
         </thead>
         <tbody id="myTable" class="bg-secondary text-white">
             <!-- contenido DOCENTE API -->
+            <thead>
+                <?php
+                  $rs=$obj->listUsers();
+                  foreach($rs as $cliente):
+                ?>
+                <tr>
+                    <td><?php echo $cliente->dni; ?></td>
+                    <td><?php echo $cliente->first_name; ?></td>
+                    <td><?php echo $cliente->last_name ; ?></td>
+                    <td><?php echo $cliente->adress; ?></td>
+                    <td><?php echo $cliente->email; ?></td>
+                    <td><?php echo ($cliente->is_active=='1')?'activo':'inactivo'; ?></td>
+                </tr>
+                  <?php
+                  endforeach;
+                  ?>
+            </thead>
         </tbody>
       </table>
   </div>
@@ -145,8 +174,11 @@
 </div>
 
 
+
+
+
 <!-- PINRT THE MODAL FOR VIEW TABLE BY BUTTON -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -156,7 +188,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <!-- desde aqui comienza el formulario -->
+        <!- desde aqui comienza el formulario ->
 
         <div class="container">
           <form id="formulario-info-update">
@@ -211,7 +243,7 @@
         </form>
         </div>
 
-        <!-- aqui teermina el formulario -->
+        <!- aqui teermina el formulario ->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -219,7 +251,9 @@
       </div>
     </div>
   </div>
-</div> 
+</div--> 
+
+
 <script src="lib/bootstrap/js/popper.min.js"></script>
 <script src="lib/bootstrap/js/jquery-3.2.1.slim.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>

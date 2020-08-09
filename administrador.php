@@ -64,7 +64,7 @@ if(!isset($_SESSION['name'])){
           </a>
         <div class="dropdown-menu bg-dark">
           <a class="dropdown-item text-primary" href="?a=pageDocente">Empleados</a>
-          <a class="dropdown-item text-primary" href="admin-tabla-clientes.php">Clientes</a>
+          <a class="dropdown-item text-primary" href="controllers/controllerAdministrador.php?action=ListarClientes">Clientes</a>
           <a class="dropdown-item text-primary" href="#">Administradores</a>
         </div>
         </li>

@@ -8,10 +8,10 @@ class administrador{
     }
 
     /**
-     * All si son varios rows
+     * get all users from table people
      */
     public function listUsers(){
-        $sql="SELECT*FROM people";
+        $sql="SELECT dni,first_name,last_name,adress,email,is_active FROM people";
         $rs=$this->con->prepare($sql);
         $rs->execute();
         return $rs->fetchAll(PDO::FETCH_OBJ);
