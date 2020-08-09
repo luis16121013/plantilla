@@ -22,6 +22,6 @@ class administrador{
      * GET DATA NAME ---ELIMINATE 
      */
     public function getName(){
-        $sql="SELECT  FROM people where ";
+        $sql="SELECT * FROM people ";
     }
 }

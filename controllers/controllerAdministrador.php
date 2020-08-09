@@ -1,6 +1,6 @@
 <?php
-require_once('models/administrador.php');
-require_once("../bin/sesion.php");
+//require_once('models/administrador.php');
+//require_once("../bin/sesion.php");
 if(isset($_SERVER['REQUEST_METHOD'])){
     if($_SERVER['REQUEST_METHOD']==='POST'){
 
