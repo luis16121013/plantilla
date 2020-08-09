@@ -57,7 +57,7 @@ class administrador{
         $rs=$this->con->prepare($sql);
         $rs->execute(array($idPeople));
     }
-    public function eliminarClient($idPeople){
+    public function eliminarCliente($idPeople){
         $sql="DELETE FROM PEOPLE WHERE id_people=? ";
         $rs=$this->con->prepare($sql);
         $rs->execute(array($idPeople));
