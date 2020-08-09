@@ -4,6 +4,16 @@
 if(isset($_SERVER['REQUEST_METHOD'])){
 
     if($_SERVER['REQUEST_METHOD']==='POST'){
+        if(isset($_POST['actualizar'])){
+            echo "actuaizzamos";
+        }else if(isset($_GET['tipo'])){
+            if($_GET['tipo']=="cliente"){
+                /**
+                 * logica de registro con ddbb
+                 */
+                header("location:http://localhost/plantilla/admin-tabla-clientes.php");
+            }
+        }
 
     }else if($_SERVER['REQUEST_METHOD']==='GET'){
         if($_GET['action']=="salir"){

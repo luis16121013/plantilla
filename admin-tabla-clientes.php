@@ -3,6 +3,7 @@
 /**
  *  IMPORTANDO EL PAQUETE DE LA SESION:::::::: 
  */
+
 session_start();
 if(!isset($_SESSION['name'])){
     header("location:http://localhost/plantilla/");
