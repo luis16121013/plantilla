@@ -22,7 +22,7 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             /**
              * si el user no existe redirigimos al index
              */
-            header("location:http://localhost/PLANTILLA/");
+            header("location:http://localhost/plantilla/login.php");
         }else if($obj->is_user=='3'){
 
             /**
@@ -52,6 +52,7 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             header("location:http://localhost/plantilla/");
       
         }
+        
     }else {
         /**
          * VALIDAMOS QUE SOLO NOS HAGAN PETICIONES TIPO POST
