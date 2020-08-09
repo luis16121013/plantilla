@@ -111,7 +111,7 @@ if(!isset($_SESSION['name'])){
       </h1><br>
       <div class="container ">
           <h3 class="text-center">ESTIMADO USUARIO!</h3>
-          <h4 class="text-center">Le damos una cordial bienvenida al sistema de la Inmobiliaria Ccopa !</h4><br>
+          <h4 class="text-center">Le damos una cordial bienvenida al sistema de Inmobiliaria Ccopa !</h4><br>
           <br>
           <p class="text-center">
             <img src="assets/img/administrador/admin3.jpg"alt="" style="width: 35%; border-radius:50%;">
