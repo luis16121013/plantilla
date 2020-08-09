@@ -116,7 +116,7 @@ $obj= new administrador();
 
 
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top:100px;">
   <div class="">
     <div class="row">
       <div class="col-9">
@@ -124,7 +124,7 @@ $obj= new administrador();
       </div>
       <div class="col-2">
         <a class="btn btn-info" href="#">
-          <img src="assets/icon/refresh.svg" class="p-0" style="width: 25px;">
+          <img src="assets/icon/administrador/agregar.svg" class="p-0" style="width: 40px;" >
         </a>
       </div>
     </div>
