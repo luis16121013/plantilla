@@ -28,10 +28,9 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             /**
              * usamos el objeto que nos retorna
              */
-            $firsName=$obj->firstName;
-            $lastName=$obj->lastName;
-            $rol=$obj->is_user;
-            require_once("../bin/sesion.php");
+            $_SESSION['name']=$obj->first_name.' '.$obj->last_name;
+            $_SESSION['rol']=$rol=$obj->is_user;
+            
 
             header("location:http://localhost/plantilla/administrador.php");
       
