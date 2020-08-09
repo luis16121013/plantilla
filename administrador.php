@@ -2,7 +2,7 @@
 /**
  *  IMPORTANDO EL PAQUETE DE LA SESION:::::::: 
  */
-require_once("bin/sesion.php");
+session_start();
 if(!isset($_SESSION['name'])){
     header("location:http://localhost/plantilla/");
 }else if($_SESSION['rol']!='3'){

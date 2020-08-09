@@ -17,7 +17,7 @@ if(isset($_SERVER['REQUEST_METHOD'])){
 
         $obj=$obj->validar($user,$pass);
         
-        session_start();
+        
         if(!$obj){
             /**
              * si el user no existe redirigimos al index
@@ -28,6 +28,7 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             /**
              * usamos el objeto que nos retorna
              */
+            session_start();
             $_SESSION['name']=$obj->first_name.' '.$obj->last_name;
             $_SESSION['rol']=$rol=$obj->is_user;
             
