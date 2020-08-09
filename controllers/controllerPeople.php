@@ -2,6 +2,7 @@
 if(isset($_SERVER['REQUEST_METHOD'])){
 
     /** 
+     * 
      *configurar segun al metodo POST
     */
     if($_SERVER['REQUEST_METHOD']==='POST'){
@@ -26,6 +27,9 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             /**
              * usamos el objeto que nos retorna
              */
+            require_once("../bin/sesion.php");
+            openSesion($obj->firsName,$obj->lastName,$obj->is_user);
+
             header("location:http://localhost/plantilla/administrador.php");
       
         }else if($obj->is_user=='2'){
