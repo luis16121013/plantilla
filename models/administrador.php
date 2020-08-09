@@ -1,5 +1,15 @@
 <?php
-require_once("config/database.php");
+if(isset($ctrl)){
+    /**
+     * importando database-config/controller
+     */
+    require_once("../config/database.php");
+    require_once("../config/config.php");
+    require_once("../config/Igestor.php");
+    require_once("../config/mysql.php");
+}else{
+    require_once("config/database.php");
+}
 class administrador{
     private $con=null;
 
@@ -31,18 +41,27 @@ class administrador{
          * action 1: access system
          * action 0: is active
          */
-        $sql="INSERT INTO people VALUES('null',?,?,?,?,?,?,?,?,?,?,'1','0','null')";
+        $active=1;
+        $logueado=0;
+        $var=null;
+        $sql="INSERT INTO people VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $rs=$this->con->prepare($sql);
-        $rs->execute(array($dni,$nombre,$apellido,$dir,$cel,$email,$sex,$fechNac,$user,$pass));
+        $rs->execute(array($var,$dni,$nombre,$apellido,$dir,$cel,$email,$sex,$fechNac,$user,$pass,$active,$logueado,$var));
     }
-    public function createClient($identificador,$dni,$ruc){
+    public function createClient($dni){
         $idPeople=$this->getIdPeople($dni);
         /**param::::
          * 1->null auto increment
          */
-        $sql="INSERT INTO client VALUES('null',?,?,?)";
+        $sql="INSERT INTO  client(identificador,id_people) VALUES(fnReturnId('3'),?)";
         $rs=$this->con->prepare($sql);
-        $rs->execute(array($identificador,$idPeople,$ruc));
+        $rs->execute(array($idPeople));
     }
+    public function eliminarClient($idPeople){
+        $sql="DELETE FROM PEOPLE WHERE id_people=? ";
+        $rs=$this->con->prepare($sql);
+        $rs->execute(array($idPeople));
+    }
+
 
 }

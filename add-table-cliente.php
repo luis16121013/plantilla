@@ -137,11 +137,11 @@ $obj= new administrador();
 <div class="tab"><h3>Datos personales:</h3>
     <h4>Sexo</h4>
     <label class="container">Masculino
-    <input type="radio"  name="radio">
+    <input type="radio"  name="radio" value="1">
     <span class="checkmark"></span>
     </label>
     <label class="container">Femenino
-    <input type="radio" name="radio">
+    <input type="radio" name="radio" value="0">
     <span class="checkmark"></span>
     </label>
 

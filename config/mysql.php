@@ -1,6 +1,11 @@
 <?php
-require_once 'Igestor.php';
-require_once 'config.php';
+if(isset($ctrl)){
+
+}else{
+    require_once 'Igestor.php';
+    require_once 'config.php';
+}
+
 class mysql implements Igestor{
 
     public function __construct(){}

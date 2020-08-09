@@ -1,5 +1,10 @@
 <?php
-require_once('mysql.php');
+if(isset($ctrl)){
+
+}else{
+    require_once('mysql.php');
+}
+
 
 class database{
     static private $instance=null;

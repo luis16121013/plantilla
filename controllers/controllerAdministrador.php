@@ -12,13 +12,26 @@ if(isset($_SERVER['REQUEST_METHOD'])){
                  * logica de registro con ddbb
                  * 
                  */
-                //require_once("../models/administardor.php");
-                //$obj= new administrador();
+                $ctrl=true;
+                require_once("../models/administrador.php");
+                $obj= new administrador();
                 $dni=$_POST['dni'];
+                $nombre=$_POST['nombre'];
+                $apellido=$_POST['apellido'];
+                $direccion=$_POST['direccion'];
+                $tel=$_POST['contacto'];
+                $email=$_POST['email'];
                 $sexo=$_POST['radio'];
-
-                echo $dni;
-                //header("location:http://localhost/plantilla/admin-tabla-clientes.php");
+                $birthDay=$_POST['fecha'];
+                $user=$_POST['user'];
+                $pass=$_POST['pass'];
+                
+    
+                $obj->createPeople($dni,$nombre,$apellido,$direccion,$tel,$email,$sexo,$birthDay,$user,$pass);
+                //$obj->createClient($dni);
+                $obj=null;
+                $ctrl=null;
+                header("location:http://localhost/plantilla/admin-tabla-clientes.php");
             }
         }
 
@@ -37,12 +50,19 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             /**
              * redirigiendo 
              */
+
             header("location:http://localhost/plantilla/admin-tabla-clientes.php");
         }
         else if($_GET['action']=="registrarCliente"){
 
-
             header("location:http://localhost/plantilla/add-table-cliente.php");
+        }else if($_GET['action']=="eliminarCliente"){
+            $idPeople=$_GET['idPeople'];
+            $ctrl=true;
+            require_once("../models/administrador.php");
+            $obj= new administrador();
+            $obj->eliminarCliente($idPeople);
+            header("location:http://localhost/plantilla/admin-tabla-clientes.php");
         }
     }
 }else{
