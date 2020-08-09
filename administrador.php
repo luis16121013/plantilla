@@ -50,7 +50,8 @@ if(!isset($_SESSION['name'])){
                 Usuarios
           </a>
         <div class="dropdown-menu bg-dark">
-          <a class="dropdown-item text-primary" href="?a=pageDocente">Empleados</a>
+          <a class="dropdown
+          -item text-primary" href="?a=pageDocente">Empleados</a>
           <a class="dropdown-item text-primary" href="#">Clientes</a>
           <a class="dropdown-item text-primary" href="#">Administradores</a>
         </div>
