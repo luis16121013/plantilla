@@ -1,11 +1,16 @@
 <?php
 /**
- * AQUI FALTA CODIGO PARA HACERLO DINAMICO
+ *  IMPORTANDO EL PAQUETE DE LA SESION:::::::: 
  */
-
-/*require_once('controllers/controllerAdministrador.php');
-$rs=new controllerAdministrador();*/
+require_once("bin/sesion.php");
+if(!isset($_SESSION['name'])){
+    header("location:http://localhost/plantilla/");
+}else if($_SESSION['rol']!='3'){
+    header("location:http://localhost/plantilla/login.php");
+}
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +86,7 @@ $rs=new controllerAdministrador();*/
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Configuracion</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="?a=perfil">Perfil</a>
-            <a class="dropdown-item" href="?id=close">Salir</a>
+            <a class="dropdown-item" href="controllers/controllerAdminstrador.php?action=salir">Salir</a>
           </div>
         </li>      
       </ul>
@@ -99,9 +104,10 @@ $rs=new controllerAdministrador();*/
        * aqui DAR CODIGO PARA MOSTRAR NOMBRE DE USUARIO
        */
       //echo $_SESSION['name'];
+      echo NameSesion();
       ?>
 
-      
+
       </h1><br>
       <div class="container ">
           <h3 class="text-center">ESTIMADO USUARIO!</h3>

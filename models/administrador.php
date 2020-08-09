@@ -16,4 +16,12 @@ class administrador{
         $rs->execute();
         return $rs->fetchAll(PDO::FETCH_OBJ);
     }
+
+    /**
+     * <--NO USE SESSION-->
+     * GET DATA NAME ---ELIMINATE 
+     */
+    public function getName(){
+        $sql="SELECT  FROM people where ";
+    }
 }
