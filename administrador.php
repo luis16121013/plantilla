@@ -25,7 +25,7 @@ $rs=new controllerAdministrador();*/
 <!---------------------------- navergador principal pantalla grande---------------------------------------------------------------->
 <nav class="navbar d-none d-sm-none d-lg-flex navbar-expand-lg bg-dark navbar-dark fixed-top " style=" width: 100%;">
     <a class="navbar-brand dropdown dropdown-toggle mr-3" href="navbardrop" id="navbardrop" data-toggle="dropdown">
-     <img src="assets/icon/administrador-icono.png" alt="Logo" style="width:40px;">
+     <img src="assets/img/administrador/admin3.jpg" alt="Logo" style="width:40px; border-radius:55%;">
     </a>
         <div class="dropdown-menu bg-dark"> 
           <a id="perfil" class="dropdown-item text-primary" href="?a=perfil">Perfil</a>
@@ -105,10 +105,10 @@ $rs=new controllerAdministrador();*/
       </h1><br>
       <div class="container ">
           <h3 class="text-center">ESTIMADO USUARIO!</h3>
-          <h4 class="text-center">Le damos una cordial bienvenida al sistema escolar virtual!</h4><br>
+          <h4 class="text-center">Le damos una cordial bienvenida al sistema de la Inmobiliaria Ccopa !</h4><br>
           <br>
           <p class="text-center">
-            <img src="assets/icon/administrador-icono.png" alt="" style="width: 25%;">
+            <img src="assets/img/administrador/admin3.jpg"alt="" style="width: 35%; border-radius:50%;">
           </p>
           <h6 class="text-center">Administrador</h6>
       </div>
