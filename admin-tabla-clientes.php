@@ -9,7 +9,7 @@ if(!isset($_SESSION['name'])){
 }else if($_SESSION['rol']!='3'){
     header("location:http://localhost/plantilla/login.php");
 }
-require_once("modelo/administrador.php");
+require_once("models/administrador.php");
 $obj= new administrador();
 ?>
 
@@ -144,7 +144,6 @@ $obj= new administrador();
         </thead>
         <tbody id="myTable" class="bg-secondary text-white">
             <!-- contenido DOCENTE API -->
-            <thead>
                 <?php
                   $rs=$obj->listUsers();
                   foreach($rs as $cliente):
@@ -160,7 +159,6 @@ $obj= new administrador();
                   <?php
                   endforeach;
                   ?>
-            </thead>
         </tbody>
       </table>
   </div>
