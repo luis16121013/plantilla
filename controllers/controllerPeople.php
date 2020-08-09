@@ -28,7 +28,7 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             /**
              * usamos el objeto que nos retorna
              */
-            $firsName=$obj->firsName;
+            $firsName=$obj->firstName;
             $lastName=$obj->lastName;
             $rol=$obj->is_user;
             require_once("../bin/sesion.php");
