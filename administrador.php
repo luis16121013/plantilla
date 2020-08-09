@@ -37,7 +37,7 @@ $rs=new controllerAdministrador();*/
           <a id="inicio" class="nav-link" href="?a=inicio">INICIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?a=cursos">Cursos</a>
+          <a class="nav-link" href="?a=cursos">Inmuebles</a>
         </li>
 <!-- Dropdown -->
         <li class="nav-item dropdown">
@@ -45,8 +45,8 @@ $rs=new controllerAdministrador();*/
                 Usuarios
           </a>
         <div class="dropdown-menu bg-dark">
-          <a class="dropdown-item text-primary" href="?a=pageDocente">Docentes</a>
-          <a class="dropdown-item text-primary" href="#">Alumnos</a>
+          <a class="dropdown-item text-primary" href="?a=pageDocente">Empleados</a>
+          <a class="dropdown-item text-primary" href="#">Clientes</a>
           <a class="dropdown-item text-primary" href="#">Administradores</a>
         </div>
         </li>
