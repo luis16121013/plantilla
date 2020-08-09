@@ -6,6 +6,12 @@ class administrador{
     public function __construct(){
         $this->con=database::create()->conect(new mysql);
     }
+    private function getIdPeople($dni){
+        $sql="SELECT id_people FROM people WHERE dni=?";
+        $rs=$this->con->prepare($sql);
+        $rs->execute(array($dni));
+        return $rs->fetch(PDO::FETCH_OBJ);
+    }
 
     /**
      * get all users from table people
@@ -18,10 +24,25 @@ class administrador{
     }
 
     /**
-     * <--NO USE SESSION-->
-     * GET DATA NAME ---ELIMINATE 
+     * set register user client
      */
-    public function getName(){
-        $sql="SELECT * FROM people ";
+    public function createPeople($dni,$nombre,$apellido,$dir,$cel,$email,$sex,$fechNac,$user,$pass){
+        /**
+         * action 1: access system
+         * action 0: is active
+         */
+        $sql="INSERT INTO people VALUES('null',?,?,?,?,?,?,?,?,?,?,'1','0','null')";
+        $rs=$this->con->prepare($sql);
+        $rs->execute(array($dni,$nombre,$apellido,$dir,$cel,$email,$sex,$fechNac,$user,$pass));
     }
+    public function createClient($identificador,$dni,$ruc){
+        $idPeople=$this->getIdPeople($dni);
+        /**param::::
+         * 1->null auto increment
+         */
+        $sql="INSERT INTO client VALUES('null',?,?,?)";
+        $rs=$this->con->prepare($sql);
+        $rs->execute(array($identificador,$idPeople,$ruc));
+    }
+
 }

@@ -12,7 +12,13 @@ if(isset($_SERVER['REQUEST_METHOD'])){
                  * logica de registro con ddbb
                  * 
                  */
-                header("location:http://localhost/plantilla/admin-tabla-clientes.php");
+                //require_once("../models/administardor.php");
+                //$obj= new administrador();
+                $dni=$_POST['dni'];
+                $sexo=$_POST['radio'];
+
+                echo $dni;
+                //header("location:http://localhost/plantilla/admin-tabla-clientes.php");
             }
         }
 
