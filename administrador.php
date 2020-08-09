@@ -86,7 +86,7 @@ if(!isset($_SESSION['name'])){
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Configuracion</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="?a=perfil">Perfil</a>
-            <a class="dropdown-item" href="?id=close">Salir</a>
+            <a class="dropdown-item" href="controllers/controllerAdminstrador.php?action=salir">Salir</a>
           </div>
         </li>      
       </ul>
