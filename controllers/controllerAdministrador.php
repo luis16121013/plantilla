@@ -26,11 +26,12 @@ if(isset($_SERVER['REQUEST_METHOD'])){
                 $user=$_POST['user'];
                 $pass=$_POST['pass'];
                 
-    
+               // echo "estamos aqui";
+
                 $obj->createPeople($dni,$nombre,$apellido,$direccion,$tel,$email,$sexo,$birthDay,$user,$pass);
-                //$obj->createClient($dni);
-                $obj=null;
-                $ctrl=null;
+                $obj->createClient($dni);
+                //$obj=null;
+               // $ctrl=null;
                 header("location:http://localhost/plantilla/admin-tabla-clientes.php");
             }
         }
@@ -63,6 +64,10 @@ if(isset($_SERVER['REQUEST_METHOD'])){
             $obj= new administrador();
             $obj->eliminarCliente($idPeople);
             header("location:http://localhost/plantilla/admin-tabla-clientes.php");
+        }else if($_GET['action']=="infoCliente"){
+
+            header("location:http://localhost/plantilla/info-tabla-cliente.php?idCliente=".$_GET['idPeople']);
+
         }
     }
 }else{

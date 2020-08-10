@@ -156,8 +156,10 @@ $obj= new administrador();
                     <td><?php echo $cliente->adress; ?></td>
                     <td><?php echo $cliente->email; ?></td>
                     <td><?php echo ($cliente->is_active=='1')?'activo':'inactivo'; ?></td>
-                    <?php echo "<td><a href='controllers/controllerAdministrador.php?action=eliminarCliente&idPeople='".$cliente->id_people."></a>delete</td>";?>
-                    <td><a href="controllers/controllerAdministrador.php?action=eliminarCliente&idPeople="<?php echo $cliente->id_people; ?>>Eliminar</a></td>
+
+                    <?php echo '<td><a href="'.htmlspecialchars("controllers/controllerAdministrador.php?action=eliminarCliente&idPeople=".urlencode($cliente->id_people)).'">delete</a>'; ?>
+                    <?php echo '<a href="'.htmlspecialchars("controllers/controllerAdministrador.php?action=infoCliente&idPeople=".urlencode($cliente->id_people)).'">info</a></td>'; ?>
+                    
                 </tr>
                   <?php
                   endforeach;
